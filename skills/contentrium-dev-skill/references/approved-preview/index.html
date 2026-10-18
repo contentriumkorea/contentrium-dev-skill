@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>콘텐츠리움 편집실 · 설치 및 시작 화면 시안</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="preview-head"><div><span class="overline">CONTENTRIUM · DESIGN STUDY</span><h1>콘텐츠리움 편집실</h1><p>영상 편집 프로그램 · 설치 / 시작 화면 시안</p></div><span class="pill">UI PREVIEW</span></header>
+<main>
+<div class="section-label"><h2>01 <span>설치 중 화면</span></h2><span>INSTALLATION</span></div>
+<section class="screen installer" id="installer" aria-label="설치 중 화면 시안">
+ <div class="art" aria-hidden="true"></div><div class="shade" aria-hidden="true"></div>
+ <div class="topline"><span>CONTENTRIUM / EDITING ROOM</span><span class="window-label">설치 프로그램</span></div>
+ <div class="identity"><h2>콘텐츠리움<br><strong>편집실</strong></h2><div class="brand">Contentrium<span class="brand-dot">.</span></div></div>
+ <div class="installation-panel">
+  <div class="status-row"><div><span class="eyebrow">INSTALLING</span><h3 id="install-status">편집 공간을 준비하고 있습니다</h3></div><div class="percent"><span id="percent">68</span><small>%</small></div></div>
+  <div class="track" role="progressbar" aria-label="설치 진행률" aria-valuemin="0" aria-valuemax="100" aria-valuenow="68"><div class="fill" id="install-fill"></div></div>
+  <div class="details"><span id="install-detail">프로그램 파일 설치 중</span><span id="install-hint">잠시만 기다려 주세요</span></div>
+  <div class="steps"><span class="done">✓ 다운로드</span><i></i><span class="active">02 설치</span><i></i><span>03 완료</span></div>
+ </div>
+</section>
+<div class="demo-bar"><p>진행률과 문구는 화면 확인용 예시입니다.</p><button id="advance" type="button">다음 설치 상태 보기 <span>→</span></button></div>
+<div class="section-label second"><h2>02 <span>프로그램 시작 화면</span></h2><span>APPLICATION STARTUP</span></div>
+<section class="screen splash" id="splash" aria-label="프로그램 시작 화면 시안">
+ <div class="art" aria-hidden="true"></div><div class="shade" aria-hidden="true"></div>
+ <div class="topline"><span>CONTENTRIUM / EDITING ROOM</span><span class="window-label">시작하는 중</span></div>
+ <div class="identity"><h2>콘텐츠리움<br><strong>편집실</strong></h2><div class="brand">Contentrium<span class="brand-dot">.</span></div></div>
+ <div class="startup-panel"><div class="startup-line"><span class="spinner" aria-hidden="true"></span><div><h3>편집실을 열고 있습니다</h3><p id="startup-detail" aria-live="polite">영상 처리 엔진을 준비하는 중</p></div><span class="startup-tag">STARTING</span></div>
+ <div class="track indeterminate" role="progressbar" aria-label="프로그램 초기화 중"><div></div></div><div class="startup-footer"><span>CONTENTRIUM</span><span>영상의 시작부터, 마지막 프레임까지.</span></div></div>
+</section>
+<div class="demo-bar"><p>실행 시작을 즉시 알리는 로딩 화면입니다.</p><button id="startup-next" type="button">시작 상태 바꾸기 <span>→</span></button></div>
+</main><footer class="preview-footer">배경만 생성 이미지 · 텍스트는 Segoe UI / 맑은 고딕 · 진행 표시와 상태는 HTML/CSS</footer>
+<script src="preview.js"></script></body></html>

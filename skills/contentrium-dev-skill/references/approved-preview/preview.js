@@ -1,0 +1,7 @@
+// Design preview only: these controls do not install or launch any software.
+const view=new URLSearchParams(location.search).get('screen');
+if(['installer','splash'].includes(view)){document.body.classList.add('single-view');document.querySelectorAll('.screen').forEach(e=>{e.hidden=e.id!==view});}
+const states=[{value:68,title:'편집 공간을 준비하고 있습니다',detail:'프로그램 파일 설치 중',hint:'잠시만 기다려 주세요',step:1},{value:100,title:'편집실이 준비되었습니다',detail:'설치 완료',hint:'콘텐츠리움 편집실을 시작할 수 있습니다',step:2},{value:24,title:'설치 파일을 내려받고 있습니다',detail:'프로그램 패키지 다운로드 중',hint:'잠시만 기다려 주세요',step:0}];
+let current=0;
+document.querySelector('#advance').addEventListener('click',()=>{current=(current+1)%states.length;const s=states[current];document.querySelector('#percent').textContent=s.value;document.querySelector('#install-status').textContent=s.title;document.querySelector('#install-detail').textContent=s.detail;document.querySelector('#install-hint').textContent=s.hint;document.querySelector('#install-fill').style.width=s.value+'%';document.querySelector('#installer [role="progressbar"]').setAttribute('aria-valuenow',s.value);document.querySelectorAll('.steps span').forEach((e,i)=>{e.className=i<s.step?'done':i===s.step?'active':'';e.textContent=(i<s.step?'✓':String(i+1).padStart(2,'0'))+' '+['다운로드','설치','완료'][i]})});
+const phases=['영상 처리 엔진을 준비하는 중','편집 도구를 불러오는 중','작업 공간을 구성하는 중'];let phase=0;document.querySelector('#startup-next').addEventListener('click',()=>{phase=(phase+1)%phases.length;document.querySelector('#startup-detail').textContent=phases[phase]});
