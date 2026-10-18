@@ -1,6 +1,6 @@
 interface:
   display_name: "Contentrium Dev Skill"
-  short_description: "독립 실행형 데스크톱 앱의 개발·설치·GitHub 배포 기준"
-  default_prompt: "Use $contentrium-dev-skill to develop, package, or release a standalone desktop app within the requested scope."
+  short_description: "데스크톱 앱 개발 및 앱·스킬·플러그인의 GitHub 소개·배포 기준"
+  default_prompt: "Use $contentrium-dev-skill to develop a desktop app or prepare GitHub presentation and authorized releases for an app, skill, or plugin; apply only the rules for that project type."
 policy:
   allow_implicit_invocation: true
