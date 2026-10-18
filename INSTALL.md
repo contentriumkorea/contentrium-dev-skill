@@ -63,7 +63,7 @@ Codex·Claude Code·Cursor·Gemini CLI·GitHub Copilot 대상으로 **격리된 
 
 ## English quick start
 
-An Agent Skills package for standalone desktop applications: scope-aware development, lightweight installers, cinematic installation/startup UI, and authorized releases. Install with the command in the installation section. Copy the complete skill directory to preserve references and previews. Background imagery must match each app's purpose; text and controls remain real UI. No automatic publishing or conversion of plugins/web apps into desktop apps.
+An Agent Skills package for desktop app development and GitHub presentation, authorized distribution, and release management of apps, skills, and plugins. Desktop installation and startup UI requirements apply only to desktop apps; skills and plugins retain their native packaging. Install with the command in the installation section. Copy the complete skill directory to preserve references and previews. Background imagery must match each app's purpose; text and controls remain real UI. No automatic publishing or conversion of plugins/web apps into desktop apps.
 
 ## 참고 및 라이선스
 

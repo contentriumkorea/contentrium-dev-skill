@@ -51,7 +51,7 @@ npx skills add contentriumkorea/contentrium-dev-skill --skill contentrium-dev-sk
 
 **차분한 무채색. 기능을 담은 배경. 읽을 수 있는 실제 텍스트.**
 
-배경 이미지는 프로그램마다 새로 만듭니다. 텍스트·버튼·진행 표시는 실제 폰트와 UI로 구현하고, 실행 직후에는 시작됐다는 표시를 제공합니다. 시각 효과를 위해 실행을 일부러 늦추지 않습니다.
+새 설치·시작 화면의 배경은 프로그램 특징에 맞게 제작합니다. 기존 화면의 부분 수정에는 배경 재생성이나 테마 개편을 강제하지 않습니다. 텍스트·버튼·진행 표시는 실제 폰트와 UI로 구현하고, 실행 직후에는 시작됐다는 표시를 제공합니다. 시각 효과를 위해 실행을 일부러 늦추지 않습니다.
 
 <details>
 <summary><strong>프로그램 시작 화면도 보기</strong></summary>
@@ -76,7 +76,7 @@ npx skills add contentriumkorea/contentrium-dev-skill --skill contentrium-dev-sk
 
 새 릴리스와 기존 다운로드 연결을 검증한 뒤 같은 제품·채널의 최신 정식 릴리스만 공개합니다. 이전 버전은 초안으로 보관하되 기존 사용자 연결에 필요하면 유지하고, 새 버전 검증에 실패하면 이전 정상 다운로드로 복구합니다. 태그와 커밋은 유지하므로 과거 소스 이력까지 비공개로 바뀌지는 않습니다.
 
-이 기준은 **제작하는 데스크톱 앱**에 적용합니다. Contentrium Dev Skill 자체는 참고자료가 포함된 에이전트 스킬로 설치합니다.
+위 세 가지 배포물 구성은 **제작하는 데스크톱 앱**에 적용합니다. Contentrium Dev Skill 자체는 참고자료가 포함된 에이전트 스킬로 설치합니다.
 
 ## 이렇게 요청하세요
 
@@ -111,7 +111,7 @@ GitHub 인증, 이미지 생성, 브라우저 등의 도구는 각 에이전트 
 <details>
 <summary><strong>English overview</strong></summary>
 
-An Agent Skills package for standalone desktop apps: scope-aware development, lightweight installers, cinematic installation/startup UI, and authorized releases.
+An Agent Skills package for desktop app development and for GitHub presentation, authorized distribution, and release management of apps, skills, and plugins. Desktop installation and startup UI requirements apply only to desktop apps; skills and plugins retain their native packaging.
 
 Install with the command above. Keep the entire skill directory to preserve its references. Backgrounds match each app's purpose; text and controls remain real UI. Publishing requires authorization, and existing plugins or web apps retain their original form.
 
@@ -126,3 +126,7 @@ Install with the command above. Keep the entire skill directory to preserve its 
 </p>
 
 <sub>MIT는 문서와 코드에 적용합니다. 이름·로고 등 상표에 대한 권리는 부여하지 않습니다. 이미지 자료는 디자인 참고용이며 제3자 권리를 대신 허가하지 않습니다.</sub>
+
+<p align="center">
+  <a href="https://contentrium.com/"><img src="assets/contentrium-home.svg" alt="콘텐츠리움 홈페이지 바로가기" width="260" height="52"></a>
+</p>
