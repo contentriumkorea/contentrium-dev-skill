@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+  <title id="title">Contentrium Dev Skill</title>
+  <desc id="desc">Build. Launch. Release. A desktop application development skill.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#202328"/><stop offset="1" stop-color="#080a0d"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity=".035"/></pattern>
+  </defs>
+  <rect width="1280" height="440" rx="22" fill="url(#bg)"/>
+  <rect x="760" width="520" height="440" fill="url(#grid)"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="64" y="66" fill="#a4a8b0" font-size="13" letter-spacing="5">CONTENTRIUM / AGENT SKILLS</text>
+    <text x="58" y="178" fill="#f5f5f6" font-size="82" font-weight="600">Contentrium</text>
+    <text x="60" y="269" fill="#d7d9dd" font-size="82" font-weight="300">Dev Skill.</text>
+    <path d="M64 316H674" stroke="#545861"/>
+    <text x="64" y="370" fill="#bfc3ca" font-size="17" letter-spacing="3">BUILD. LAUNCH. RELEASE.</text>
+    <g fill="#15181d" stroke="#484d56"><rect x="830" y="72" width="362" height="86" rx="12"/><rect x="830" y="180" width="362" height="86" rx="12"/><rect x="830" y="288" width="362" height="86" rx="12"/></g>
+    <g fill="#777f8c" font-size="14"><text x="856" y="123">01</text><text x="856" y="231">02</text><text x="856" y="339">03</text></g>
+    <g fill="#e8eaed" font-size="22" letter-spacing="2"><text x="902" y="123">BUILD</text><text x="902" y="231">LAUNCH</text><text x="902" y="339">RELEASE</text></g>
+    <g fill="none" stroke="#b8bec7" stroke-width="2"><path d="m1142 105 10 10-10 10"/><circle cx="1147" cy="223" r="10"/><path d="m1137 330 7 7 14-16"/></g>
+  </g>
+</svg>
