@@ -34,7 +34,7 @@ npx skills add contentriumkorea/contentrium-dev-skill --skill contentrium-dev-sk
 
 **Codex · Claude Code · Cursor · Gemini CLI · GitHub Copilot**
 
-[개인용 설치, ZIP 설치 및 업데이트 안내 →](INSTALL.md)
+[개인용 설치, ZIP 설치 및 업데이트 안내 →](INSTALL.md) · [Mac 설치 안내 →](skills/contentrium-dev-skill/references/mac-skill-install.md)
 
 ## 개발에서 끝내지 않고, 전달까지
 
@@ -104,7 +104,7 @@ $contentrium-dev-skill 영상 편집용 Windows 데스크톱 앱을 만들어줘
 <details>
 <summary><strong>호환성과 검증 범위</strong></summary>
 
-표준 Agent Skills 형식으로 구성했습니다. 다섯 에이전트 대상으로 격리된 프로젝트 폴더 설치를 검증한 이력이 있습니다. 현재 패키지는 README 고정 템플릿을 포함한 15개 파일이며, 설치본·ZIP과 원본의 일치를 확인했습니다. 모든 에이전트에서 실제 앱 개발·배포 전체를 실행했다는 의미는 아닙니다.
+표준 Agent Skills 형식으로 구성했습니다. 다섯 에이전트 대상으로 격리된 프로젝트 폴더 설치를 검증한 이력이 있습니다. 현재 패키지는 README 고정 템플릿을 포함한 16개 파일이며, 설치본·ZIP과 원본의 일치를 확인했습니다. 모든 에이전트에서 실제 앱 개발·배포 전체를 실행했다는 의미는 아닙니다.
 
 GitHub 인증, 이미지 생성, 브라우저 등의 도구는 각 에이전트 환경에서 별도로 사용할 수 있어야 합니다. [상세 안내](INSTALL.md#호환성과-검증-범위)를 확인하세요.
 

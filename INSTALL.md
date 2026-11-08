@@ -18,6 +18,14 @@ npx skills add contentriumkorea/contentrium-dev-skill --skill contentrium-dev-sk
 
 Cursor, Gemini CLI, GitHub Copilot 등 다른 Agent Skills 지원 도구도 설치 과정에서 선택할 수 있습니다. 지원 목록은 [Skills CLI 안내](https://github.com/vercel-labs/skills#supported-agents)에서 확인하세요. 기존 설치가 있다면 설치 도구의 교체 안내를 확인하세요. 같은 스킬을 여러 경로에 중복 설치하지 않는 것을 권장합니다.
 
+## Mac 설치
+
+Mac에서도 같은 패키지를 사용합니다. 위 터미널 명령으로 개인용 설치하거나 아래 ZIP 방식으로 폴더 전체를 복사하세요.
+
+**[Mac 전용 상세 안내 →](skills/contentrium-dev-skill/references/mac-skill-install.md)**
+
+상세 안내에는 Codex·Claude Code별 명령, Finder 경로 이동, 설치 확인, macOS 앱 개발 요청 예시와 업데이트 방법이 포함되어 있습니다. 이 안내는 배포 ZIP과 설치된 스킬의 참고자료에도 포함됩니다. 실제 Mac에서의 설치 실행 검증은 아직 하지 않았습니다.
+
 ### ZIP으로 직접 설치
 
 [최신 설치 패키지](https://github.com/contentriumkorea/contentrium-dev-skill/releases/latest/download/contentrium-dev-skill.zip)를 압축 해제하고 **`contentrium-dev-skill` 폴더 전체**를 아래 위치로 복사합니다. `SKILL.md`만 복사하면 이미지와 참고자료가 빠집니다.
@@ -27,7 +35,7 @@ Cursor, Gemini CLI, GitHub Copilot 등 다른 Agent Skills 지원 도구도 설�
 | Codex | `~/.agents/skills/contentrium-dev-skill/` | `.agents/skills/contentrium-dev-skill/` |
 | Claude Code | `~/.claude/skills/contentrium-dev-skill/` | `.claude/skills/contentrium-dev-skill/` |
 
-Windows의 `~`는 사용자 홈 폴더입니다. 다른 에이전트는 해당 제품의 스킬 폴더에 동일한 폴더 전체를 복사하세요. 목록에 나타나지 않으면 새 세션을 열거나 에이전트를 재시작하세요.
+Windows와 macOS에서 `~`는 사용자 홈 폴더입니다. 다른 에이전트는 해당 제품의 스킬 폴더에 동일한 폴더 전체를 복사하세요. 목록에 나타나지 않으면 새 세션을 열거나 에이전트를 재시작하세요.
 
 ### 사용 예시
 
@@ -59,7 +67,7 @@ npx skills update contentrium-dev-skill -p
 
 표준 Agent Skills 형식이며 별도 실행 파일이나 서버를 설치하지 않습니다. Codex용 표시 정보는 선택 사항이므로 다른 에이전트의 사용을 막지 않습니다. 이 스킬을 설치한다고 GitHub 인증, 이미지 생성 도구 또는 브라우저가 함께 설치되지는 않습니다. 실제 작업에는 각 환경에서 사용 가능한 도구와 사용자 권한이 필요합니다.
 
-Codex·Claude Code·Cursor·Gemini CLI·GitHub Copilot 대상으로 격리된 프로젝트 폴더 설치를 검증한 이력이 있습니다. 현재 패키지는 고정 README 템플릿을 포함한 15개 파일이며 설치본·ZIP과 원본의 일치를 확인했습니다. 공통 경로를 사용하는 에이전트는 같은 설치 폴더를 공유합니다. 모든 에이전트에서 실제 앱 개발·배포 전체를 실행했다는 의미는 아닙니다. 일반 웹 채팅에 파일을 첨부하는 것과 로컬 에이전트에 스킬을 설치하는 것은 다릅니다.
+Codex·Claude Code·Cursor·Gemini CLI·GitHub Copilot 대상으로 격리된 프로젝트 폴더 설치를 검증한 이력이 있습니다. 현재 패키지는 고정 README 템플릿을 포함한 16개 파일이며 설치본·ZIP과 원본의 일치를 확인했습니다. 공통 경로를 사용하는 에이전트는 같은 설치 폴더를 공유합니다. 모든 에이전트에서 실제 앱 개발·배포 전체를 실행했다는 의미는 아닙니다. 일반 웹 채팅에 파일을 첨부하는 것과 로컬 에이전트에 스킬을 설치하는 것은 다릅니다.
 
 ## English quick start
 

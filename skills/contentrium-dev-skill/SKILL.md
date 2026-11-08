@@ -13,6 +13,8 @@ description: Use for standalone desktop app development, installation, and relea
 
 GitHub·브라우저·이미지 생성 기능은 현재 에이전트에 제공된 도구를 사용한다. 사용자 또는 프로젝트의 도구 제한이 우선한다. 특정 플러그인이나 Aside가 없는 환경에 설치·인증을 임의로 강제하지 않는다. 도구 선택은 [배포](references/deployment.md)의 환경별 기준을 따른다.
 
+Mac에 이 스킬 자체를 설치하거나 설치 방법을 안내할 때는 [Mac 스킬 설치 안내](references/mac-skill-install.md)를 읽는다. 앱 제작 시 매번 읽을 필요는 없다.
+
 ## 작업 범위 선택
 
 | 요청 | 적용 범위 |
