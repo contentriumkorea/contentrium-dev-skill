@@ -41,7 +41,7 @@ npx skills add contentriumkorea/contentrium-dev-skill --skill contentrium-dev-sk
 | 01 · BUILD | 02 · LAUNCH | 03 · RELEASE |
 | :--- | :--- | :--- |
 | **쓰는 사람을 위한 앱** | **시작을 알리는 화면** | **바로 내려받는 배포** |
-| 설치·바로가기·트레이·제거까지 확인합니다. | 앱의 기능에 맞는 배경과 실제 UI로 설치·실행 상태를 전달합니다. | 경량 설치기, 최신 본체, 포터블 ZIP을 준비하고 다운로드를 검증합니다. |
+| Windows·macOS에 맞는 설치·실행·제거를 확인합니다. | 앱의 기능에 맞는 배경과 실제 UI로 설치·실행 상태를 전달합니다. | 지원 OS에 맞는 패키지를 준비하고 다운로드를 검증합니다. |
 
 ## 화면에도 완성의 기준을
 
@@ -60,13 +60,15 @@ npx skills add contentriumkorea/contentrium-dev-skill --skill contentrium-dev-sk
 
 </details>
 
+macOS의 표준 설치 흐름에 별도 설치 화면을 강제하지 않습니다. 실제 제공하는 자체 설치·시작 화면에 디자인을 적용합니다.
+
 위 화면은 영상 편집 도구 **콘텐츠리움 편집실**을 가정한 디자인 시안입니다. 실제 출시된 편집 프로그램이 아니며, 진행률은 시연용입니다.
 
 [HTML 시안과 디자인 자료 →](skills/contentrium-dev-skill/references/approved-preview) · [디자인 기준 →](skills/contentrium-dev-skill/references/design.md)
 
-## 배포는 세 가지 형태로
+## 배포는 운영체제에 맞게
 
-새로 만드는 데스크톱 앱은 사용자가 설치 방식까지 선택할 수 있게 준비합니다.
+새 Windows 앱은 다음 세 가지를 기본으로 준비합니다. macOS 앱은 앱 번들을 담은 DMG 또는 ZIP 등 적합한 방식을 선택하고, 필요한 경우에만 PKG나 별도 설치기를 제공합니다.
 
 | 배포물 | 사용 경험 |
 | :--- | :--- |
@@ -76,7 +78,7 @@ npx skills add contentriumkorea/contentrium-dev-skill --skill contentrium-dev-sk
 
 새 릴리스와 기존 다운로드 연결을 검증한 뒤 같은 제품·채널의 최신 정식 릴리스만 공개합니다. 이전 버전은 초안으로 보관하되 기존 사용자 연결에 필요하면 유지하고, 새 버전 검증에 실패하면 이전 정상 다운로드로 복구합니다. 태그와 커밋은 유지하므로 과거 소스 이력까지 비공개로 바뀌지는 않습니다.
 
-위 세 가지 배포물 구성은 **제작하는 데스크톱 앱**에 적용합니다. Contentrium Dev Skill 자체는 참고자료가 포함된 에이전트 스킬로 설치합니다.
+위 세 가지 배포물 구성은 **신규 Windows 앱**의 기본값입니다. macOS에 Windows 전용 바로가기·트레이·제거 등록이나 3종 배포를 강제하지 않습니다. Contentrium Dev Skill 자체는 참고자료가 포함된 에이전트 스킬로 설치합니다.
 
 ## 이렇게 요청하세요
 
@@ -97,7 +99,7 @@ $contentrium-dev-skill 영상 편집용 Windows 데스크톱 앱을 만들어줘
 - **데스크톱 앱에는 개발·설치·배포 기준**, **스킬·플러그인에는 소개·배포·릴리스 관리 기준만** 적용합니다. 각 프로젝트의 유형과 고유 패키징을 유지합니다.
 - 기존 앱의 일부 수정에 신규 제작 기준 전체를 강제하지 않습니다.
 - 개발 요청만으로 공개 배포하지 않으며, 인증정보와 비공개 자료를 배포물에 포함하지 않습니다.
-- 다른 OS나 오프라인 설치처럼 명시한 요구가 있으면 그 요구를 우선합니다.
+- 공통 기준과 Windows·macOS 기준을 구분합니다. 명시한 OS·설치 요구를 우선하며, 요청하지 않은 다중 OS 지원을 추가하지 않습니다.
 
 <details>
 <summary><strong>호환성과 검증 범위</strong></summary>
@@ -111,7 +113,7 @@ GitHub 인증, 이미지 생성, 브라우저 등의 도구는 각 에이전트 
 <details>
 <summary><strong>English overview</strong></summary>
 
-An Agent Skills package for desktop app development and for GitHub presentation, authorized distribution, and release management of apps, skills, and plugins. Desktop installation and startup UI requirements apply only to desktop apps; skills and plugins retain their native packaging.
+An Agent Skills package for desktop app development and for GitHub presentation, authorized distribution, and release management of apps, skills, and plugins. Common guidance is separated from Windows and macOS packaging and display requirements. The three-artifact distribution default is Windows-only. Desktop installation and startup UI requirements apply only to desktop apps; skills and plugins retain their native packaging.
 
 Install with the command above. Keep the entire skill directory to preserve its references. Backgrounds match each app's purpose; text and controls remain real UI. Publishing requires authorization, and existing plugins or web apps retain their original form.
 
